@@ -31,3 +31,7 @@ The application presents randomized multiple-choice questions, includes a **15-s
 ## Project Purpose
 
 The main goal of this project is to demonstrate front-end development skills by building an interactive and user-friendly quiz application. It showcases DOM manipulation, event handling, timers, dynamic content rendering, and responsive design.
+
+<img width="1366" height="768" alt="Screenshot (44)" src="https://github.com/user-attachments/assets/d460c100-e71b-4dc7-a9b0-8778af9a346c" />
+
+
