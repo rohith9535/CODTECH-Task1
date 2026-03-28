@@ -8,7 +8,7 @@
 
 # Interactive Quiz Application
 
-Check the demo:-https://rohith9535.github.io/CODTECH-Task1/
+Check the Website:-https://rohith9535.github.io/CODTECH-Task1/
 
 This project is an **Interactive Quiz Application** developed as part of an internship task. It is a responsive web-based quiz platform built using **HTML, CSS, and JavaScript** that helps users test their knowledge of web development fundamentals in a simple and engaging way.
 
