@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interactive Quiz Application</title>
+  <title>Quizz application</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Spectral:wght@500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header class="site-header">
     <div class="site-bar centered">
       <div class="brand">
         <span class="brand-mark"></span>
-        <span class="brand-name">Interactive Quiz Application</span>
+        <span class="brand-name">Quizz application</span>
       </div>
     </div>
   </header>
@@ -22,23 +22,28 @@
   <main class="app">
     <section class="quiz-card" aria-live="polite">
       <header class="quiz-header">
-        <p class="eyebrow">Skill Check</p>
-        <h1>Fundamentals Quiz</h1>
-        <p class="subtitle">Test your web fundamentals with fast, focused questions.</p>
+        <p class="eyebrow">Round Based Challenge</p>
+        <h1>UI + Logic Battle</h1>
+        <p class="subtitle">Answer quickly, stay sharp, and finish all 10 rounds.</p>
       </header>
 
       <section id="start-screen" class="screen">
         <div class="start-visual">
-          <div class="ring"></div>
-          <div class="ring ring-two"></div>
-          <div class="ring ring-three"></div>
+          <div class="pulse-stack" aria-hidden="true">
+            <span class="pulse-dot"></span>
+            <span class="pulse-dot"></span>
+            <span class="pulse-dot"></span>
+            <span class="pulse-dot"></span>
+            <span class="pulse-dot"></span>
+          </div>
+          <div class="glow-orb"></div>
         </div>
-        <button id="start-btn" class="btn primary">Start Quiz</button>
+        <button id="start-btn" class="btn primary">Launch Challenge</button>
       </section>
 
       <section id="quiz-screen" class="screen hidden">
         <div class="progress">
-          <span id="progress-text">Question 1 of 10</span>
+          <span id="progress-text">Round 1 of 10</span>
           <span id="timer-text" class="timer">15s</span>
           <div class="progress-bar">
             <div id="progress-fill"></div>
@@ -51,26 +56,26 @@
         </div>
 
         <div class="actions">
-          <button id="next-btn" class="btn ghost" disabled>Next Question</button>
+          <button id="next-btn" class="btn ghost" disabled>Next Round</button>
         </div>
       </section>
 
       <section id="result-screen" class="screen hidden">
-        <h2>Quiz Complete</h2>
+        <h2>Challenge Complete</h2>
         <p id="score-text" class="score-text">You scored 0 out of 10.</p>
         <p id="score-detail" class="score-detail">0 correct answers.</p>
-        <button id="restart-btn" class="btn primary">Restart Quiz</button>
+        <button id="restart-btn" class="btn primary">Play Again</button>
       </section>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-content">
-      <span>Built for focused practice</span>
+      <span>10 random rounds</span>
       <span class="footer-dot"></span>
-      <span>Updated question sets</span>
+      <span>15s timer each</span>
       <span class="footer-dot"></span>
-      <span>15s per question</span>
+      <span>score + rank summary</span>
     </div>
   </footer>
 
