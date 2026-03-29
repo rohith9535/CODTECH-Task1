@@ -6,11 +6,11 @@
 - **Company:** CODTECH IT SOLUTIONS
 - **Intern ID:** CTIS6787
 
-# Interactive Quiz Application
+# Quiz Application
 
 Check the Website:-https://rohith9535.github.io/CODTECH-Task1/
 
-This project is an **Interactive Quiz Application** developed as part of an internship task. It is a responsive web-based quiz platform built using **HTML, CSS, and JavaScript** that helps users test their knowledge of web development fundamentals in a simple and engaging way.
+This project is an **Quiz Application** developed as part of an internship task. It is a responsive web-based quiz platform built using **HTML, CSS, and JavaScript** that helps users test their knowledge of web development fundamentals in a simple and engaging way.
 
 The application presents randomized multiple-choice questions, includes a **15-second timer** for each question, tracks the user's score, and displays the final result at the end of the quiz. It also features a modern user interface, smooth transitions, and a confetti celebration effect after quiz completion to create a more interactive experience.
 
