@@ -1,245 +1,182 @@
 const allQuestions = [
   {
-    question: "What does HTML stand for?",
+    question: "Which CSS property is used to create rounded corners?",
     answers: [
-      { text: "Hyper Text Markup Language", correct: true },
-      { text: "Home Tool Markup Language", correct: false },
-      { text: "Hyperlinks and Text Mark Language", correct: false },
-      { text: "Hyper Tool Multi Language", correct: false }
+      { text: "border-radius", correct: true },
+      { text: "corner-radius", correct: false },
+      { text: "radius", correct: false },
+      { text: "curve", correct: false }
     ]
   },
   {
-    question: "Which HTML element is used to include JavaScript?",
+    question: "Which JavaScript method is used to convert an object to JSON text?",
     answers: [
-      { text: "<script>", correct: true },
-      { text: "<javascript>", correct: false },
-      { text: "<js>", correct: false },
-      { text: "<code>", correct: false }
+      { text: "JSON.stringify()", correct: true },
+      { text: "JSON.parse()", correct: false },
+      { text: "JSON.objectify()", correct: false },
+      { text: "JSON.serialize()", correct: false }
     ]
   },
   {
-    question: "What does CSS stand for?",
+    question: "In CSS Grid, which property defines the number of columns?",
     answers: [
-      { text: "Cascading Style Sheets", correct: true },
-      { text: "Creative Style System", correct: false },
-      { text: "Computer Style Sheets", correct: false },
-      { text: "Colorful Style Syntax", correct: false }
+      { text: "grid-template-columns", correct: true },
+      { text: "grid-columns", correct: false },
+      { text: "column-layout", correct: false },
+      { text: "template-columns", correct: false }
     ]
   },
   {
-    question: "Which CSS property controls text size?",
+    question: "Which HTML tag is best for displaying standalone media with a caption?",
     answers: [
-      { text: "font-size", correct: true },
-      { text: "text-style", correct: false },
-      { text: "font-weight", correct: false },
-      { text: "letter-size", correct: false }
+      { text: "<figure>", correct: true },
+      { text: "<caption>", correct: false },
+      { text: "<media>", correct: false },
+      { text: "<content>", correct: false }
     ]
   },
   {
-    question: "Which method adds a new element at the end of an array?",
+    question: "Which keyword prevents reassignment after a variable is declared?",
     answers: [
-      { text: "push()", correct: true },
-      { text: "pop()", correct: false },
-      { text: "shift()", correct: false },
-      { text: "unshift()", correct: false }
-    ]
-  },
-  {
-    question: "Which keyword declares a block-scoped variable in JavaScript?",
-    answers: [
-      { text: "let", correct: true },
+      { text: "const", correct: true },
+      { text: "let", correct: false },
       { text: "var", correct: false },
-      { text: "const", correct: false },
-      { text: "static", correct: false }
+      { text: "fixed", correct: false }
     ]
   },
   {
-    question: "What does DOM stand for?",
+    question: "Which CSS unit is relative to the viewport width?",
     answers: [
-      { text: "Document Object Model", correct: true },
-      { text: "Digital Ordinance Model", correct: false },
-      { text: "Display Object Management", correct: false },
-      { text: "Document Order Map", correct: false }
-    ]
-  },
-  {
-    question: "Which HTTP method is commonly used to request data?",
-    answers: [
-      { text: "GET", correct: true },
-      { text: "POST", correct: false },
-      { text: "PUT", correct: false },
-      { text: "PATCH", correct: false }
-    ]
-  },
-  {
-    question: "Which CSS layout is best for one-dimensional alignment?",
-    answers: [
-      { text: "Flexbox", correct: true },
-      { text: "Grid", correct: false },
-      { text: "Float", correct: false },
-      { text: "Position", correct: false }
-    ]
-  },
-  {
-    question: "Which tool is commonly used for package management in JavaScript?",
-    answers: [
-      { text: "npm", correct: true },
-      { text: "pip", correct: false },
-      { text: "gem", correct: false },
-      { text: "composer", correct: false }
-    ]
-  },
-  {
-    question: "Which HTML attribute is used for alternative text on images?",
-    answers: [
-      { text: "alt", correct: true },
-      { text: "title", correct: false },
-      { text: "src", correct: false },
-      { text: "label", correct: false }
-    ]
-  },
-  {
-    question: "Which CSS unit is relative to the root font size?",
-    answers: [
-      { text: "rem", correct: true },
-      { text: "em", correct: false },
-      { text: "px", correct: false },
+      { text: "vw", correct: true },
+      { text: "vh", correct: false },
+      { text: "rem", correct: false },
       { text: "%", correct: false }
     ]
   },
   {
-    question: "Which JavaScript method converts JSON string to object?",
+    question: "Which JavaScript array method returns the first element that matches a condition?",
     answers: [
-      { text: "JSON.parse()", correct: true },
-      { text: "JSON.stringify()", correct: false },
-      { text: "JSON.object()", correct: false },
-      { text: "JSON.toObject()", correct: false }
-    ]
-  },
-  {
-    question: "Which HTML tag defines a navigation section?",
-    answers: [
-      { text: "<nav>", correct: true },
-      { text: "<header>", correct: false },
-      { text: "<section>", correct: false },
-      { text: "<aside>", correct: false }
-    ]
-  },
-  {
-    question: "Which CSS property creates space inside an element?",
-    answers: [
-      { text: "padding", correct: true },
-      { text: "margin", correct: false },
-      { text: "gap", correct: false },
-      { text: "border", correct: false }
-    ]
-  },
-  {
-    question: "Which JavaScript array method creates a new array with filtered values?",
-    answers: [
-      { text: "filter()", correct: true },
+      { text: "find()", correct: true },
+      { text: "filter()", correct: false },
       { text: "map()", correct: false },
-      { text: "reduce()", correct: false },
-      { text: "forEach()", correct: false }
+      { text: "reduce()", correct: false }
     ]
   },
   {
-    question: "Which HTTP status code means 'Not Found'?",
+    question: "What does API stand for?",
     answers: [
-      { text: "404", correct: true },
+      { text: "Application Programming Interface", correct: true },
+      { text: "Applied Program Internet", correct: false },
+      { text: "Advanced Protocol Input", correct: false },
+      { text: "Application Process Integration", correct: false }
+    ]
+  },
+  {
+    question: "Which CSS value makes an element a flex container?",
+    answers: [
+      { text: "display: flex", correct: true },
+      { text: "position: flex", correct: false },
+      { text: "flex: container", correct: false },
+      { text: "layout: flex", correct: false }
+    ]
+  },
+  {
+    question: "Which HTTP status code means 'Created'?",
+    answers: [
+      { text: "201", correct: true },
       { text: "200", correct: false },
       { text: "301", correct: false },
-      { text: "500", correct: false }
+      { text: "404", correct: false }
     ]
   },
   {
-    question: "Which CSS property controls element stacking order?",
+    question: "Which method removes the last element from an array?",
+    answers: [
+      { text: "pop()", correct: true },
+      { text: "push()", correct: false },
+      { text: "shift()", correct: false },
+      { text: "slice()", correct: false }
+    ]
+  },
+  {
+    question: "Which HTML attribute is required for accessibility on images?",
+    answers: [
+      { text: "alt", correct: true },
+      { text: "title", correct: false },
+      { text: "name", correct: false },
+      { text: "aria", correct: false }
+    ]
+  },
+  {
+    question: "Which CSS property controls the distance between grid rows?",
+    answers: [
+      { text: "row-gap", correct: true },
+      { text: "grid-gap-row", correct: false },
+      { text: "gap-y", correct: false },
+      { text: "row-space", correct: false }
+    ]
+  },
+  {
+    question: "Which JavaScript event runs when the page is fully loaded?",
+    answers: [
+      { text: "DOMContentLoaded", correct: true },
+      { text: "onready", correct: false },
+      { text: "loadPage", correct: false },
+      { text: "documentReady", correct: false }
+    ]
+  },
+  {
+    question: "What is the default HTTP method for submitting a simple URL request in a browser?",
+    answers: [
+      { text: "GET", correct: true },
+      { text: "POST", correct: false },
+      { text: "PATCH", correct: false },
+      { text: "DELETE", correct: false }
+    ]
+  },
+  {
+    question: "Which CSS property changes the thickness of text?",
+    answers: [
+      { text: "font-weight", correct: true },
+      { text: "font-style", correct: false },
+      { text: "text-size", correct: false },
+      { text: "line-height", correct: false }
+    ]
+  },
+  {
+    question: "Which JavaScript operator checks both value and type equality?",
+    answers: [
+      { text: "===", correct: true },
+      { text: "==", correct: false },
+      { text: "=", correct: false },
+      { text: "!=", correct: false }
+    ]
+  },
+  {
+    question: "Which HTML element is semantically best for the main content area?",
+    answers: [
+      { text: "<main>", correct: true },
+      { text: "<content>", correct: false },
+      { text: "<section>", correct: false },
+      { text: "<body>", correct: false }
+    ]
+  },
+  {
+    question: "Which CSS property sets the stacking order of positioned elements?",
     answers: [
       { text: "z-index", correct: true },
       { text: "order", correct: false },
-      { text: "position", correct: false },
-      { text: "float", correct: false }
+      { text: "index", correct: false },
+      { text: "position-level", correct: false }
     ]
   },
   {
-    question: "Which HTML element groups form controls?",
+    question: "Which JavaScript method can be used to iterate over all items in an array?",
     answers: [
-      { text: "<fieldset>", correct: true },
-      { text: "<form>", correct: false },
-      { text: "<label>", correct: false },
-      { text: "<input>", correct: false }
-    ]
-  },
-  {
-    question: "Which CSS display value places items in a grid?",
-    answers: [
-      { text: "grid", correct: true },
-      { text: "block", correct: false },
-      { text: "inline", correct: false },
-      { text: "flex", correct: false }
-    ]
-  },
-  {
-    question: "Which JavaScript keyword is used to create a class?",
-    answers: [
-      { text: "class", correct: true },
-      { text: "object", correct: false },
-      { text: "new", correct: false },
-      { text: "prototype", correct: false }
-    ]
-  },
-  {
-    question: "Which tag is used to define a hyperlink?",
-    answers: [
-      { text: "<a>", correct: true },
-      { text: "<link>", correct: false },
-      { text: "<href>", correct: false },
-      { text: "<url>", correct: false }
-    ]
-  },
-  {
-    question: "Which CSS function makes a color semi-transparent?",
-    answers: [
-      { text: "rgba()", correct: true },
-      { text: "rgb()", correct: false },
-      { text: "hex()", correct: false },
-      { text: "hsl()", correct: false }
-    ]
-  },
-  {
-    question: "Which JavaScript method selects the first matching element?",
-    answers: [
-      { text: "querySelector()", correct: true },
-      { text: "getElementsByClassName()", correct: false },
-      { text: "querySelectorAll()", correct: false },
-      { text: "getElement()", correct: false }
-    ]
-  },
-  {
-    question: "Which HTML attribute opens a link in a new tab?",
-    answers: [
-      { text: "target=\"_blank\"", correct: true },
-      { text: "rel=\"new\"", correct: false },
-      { text: "blank=\"true\"", correct: false },
-      { text: "newtab", correct: false }
-    ]
-  },
-  {
-    question: "Which CSS property changes the cursor to a pointer?",
-    answers: [
-      { text: "cursor", correct: true },
-      { text: "pointer-events", correct: false },
-      { text: "hover", correct: false },
-      { text: "user-select", correct: false }
-    ]
-  },
-  {
-    question: "Which JavaScript statement stops a loop?",
-    answers: [
-      { text: "break", correct: true },
-      { text: "stop", correct: false },
-      { text: "return", correct: false },
-      { text: "exit", correct: false }
+      { text: "forEach()", correct: true },
+      { text: "sort()", correct: false },
+      { text: "split()", correct: false },
+      { text: "join()", correct: false }
     ]
   }
 ];
@@ -285,7 +222,7 @@ const showScreen = (screen) => {
 
 const updateProgress = () => {
   const questionNumber = currentQuestionIndex + 1;
-  progressText.textContent = `Question ${questionNumber} of ${quizQuestions.length}`;
+  progressText.textContent = `Round ${questionNumber} of ${quizQuestions.length}`;
   progressFill.style.width = `${(questionNumber / quizQuestions.length) * 100}%`;
 };
 
@@ -325,7 +262,6 @@ const renderQuestion = () => {
   const current = quizQuestions[currentQuestionIndex];
   questionText.textContent = current.question;
 
-  // Trigger a subtle animation on each question change
   questionCard.classList.remove("question-card");
   void questionCard.offsetWidth;
   questionCard.classList.add("question-card");
@@ -389,7 +325,7 @@ const resizeConfettiCanvas = () => {
 };
 
 const createConfetti = () => {
-  const colors = ["#ff7a1a", "#ffd39f", "#2e8b57", "#c0392b", "#1f2a32"];
+  const colors = ["#0e9f6e", "#5adcb0", "#2a6abc", "#1a1f36", "#f9b44d"];
   confettiParticles = Array.from({ length: 120 }).map(() => ({
     x: Math.random() * confettiCanvas.width,
     y: -20 - Math.random() * confettiCanvas.height,
@@ -433,9 +369,17 @@ const stopConfetti = () => {
   confettiCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
 };
 
+const getScoreRank = () => {
+  const ratio = score / quizQuestions.length;
+  if (ratio >= 0.9) return "Elite Sprint Performance";
+  if (ratio >= 0.7) return "Strong Frontend Momentum";
+  if (ratio >= 0.5) return "Solid Base, Keep Practicing";
+  return "Starter Level, Try Another Round";
+};
+
 const showResults = () => {
   scoreText.textContent = `You scored ${score} out of ${quizQuestions.length}.`;
-  scoreDetail.textContent = `${score} correct answers.`;
+  scoreDetail.textContent = `${score} correct answers. Rank: ${getScoreRank()}.`;
   showScreen(resultScreen);
   clearInterval(timerId);
   startConfetti();
